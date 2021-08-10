@@ -1,0 +1,17 @@
+footer {
+  font-family: 'DM Sans', sans-serif;
+  padding: 35px 0;
+  text-align: center;
+  color: var(--white);
+  background-color: var(--purple);
+}
+
+.footer-link {
+  font-weight: 700;
+  color: var(--white);
+  transition: 0.3s;
+}
+
+.footer-link:hover {
+  color: var(--orange);
+}

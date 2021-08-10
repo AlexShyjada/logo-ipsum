@@ -1,0 +1,140 @@
+.header {
+  margin: 3rem auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: var(--white);
+}
+
+header .container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 90%;
+  max-width: 980px;
+  margin: auto;
+}
+
+header img {
+  width: 150px;
+  margin-left: 20px;
+  padding: 15px 0;
+}
+
+header nav ul {
+  display: flex;
+  transition: 0.3s;
+}
+
+header nav ul li {
+  list-style: none;
+  transition: 0.3s;
+}
+
+header nav ul li a {
+  text-decoration: none;
+  color: var(--black);
+  font-size: 15px;
+  font-family: 'DM Sans', sans-serif;
+  font-weight: 700;
+  padding: 2.4rem;
+  transition: 0.3s;
+}
+
+header nav ul li a:hover {
+  background: rgba(255, 255, 255, 0.15);
+}
+
+@media (max-width: 720px) {
+  .header.container {
+    position: fixed;
+    width: 100%;
+    top: 0;
+    margin: 0 auto;
+  }
+
+  .btnOrange.btnHeader {
+    display: none;
+  }
+
+  .logo {
+    width: 40%;
+  }
+
+  nav {
+    display: none;
+  }
+
+  .one,
+  .two,
+  .three {
+    background-color: var(--black);
+    height: 2px;
+    width: 100%;
+    transition-duration: 0.3s;
+  }
+
+  .menu-toggle {
+    margin-right: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 5px;
+    width: 20px;
+  }
+
+  .menu-section {
+    display: flex;
+    align-items: center;
+    transition: 0.3s;
+  }
+
+  .menu-section.on {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background-color: var(--white);
+    z-index: 10;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: 0.3s;
+  }
+
+  .menu-section.on nav {
+    display: block;
+    transition: 0.3s;
+  }
+
+  .menu-section.on .menu-toggle {
+    position: absolute;
+    right: 0;
+    top: 20px;
+  }
+
+  .menu-section.on .menu-toggle .one {
+    transform: rotate(45deg) translate(6px, 7px);
+  }
+
+  .menu-section.on .menu-toggle .two {
+    opacity: 0;
+  }
+
+  .menu-section.on .menu-toggle .three {
+    transform: rotate(-45deg) translate(3px, -4px);
+  }
+
+  .menu-section.on nav ul {
+    text-align: center;
+    display: block;
+  }
+
+  .menu-section.on nav ul a {
+    transition-duration: 0.5s;
+    font-size: 2rem;
+    line-height: 4rem;
+    display: block;
+  }
+}

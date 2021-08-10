@@ -1,0 +1,19 @@
+.logos {
+  margin: 14rem auto;
+}
+
+.logoContainer {
+  list-style: none;
+  display: flex;
+  gap: 2.5rem;
+  justify-content: center;
+  justify-content: space-between;
+}
+
+@media (max-width: 720px) {
+  .logoContainer {
+    gap: 5rem;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+}

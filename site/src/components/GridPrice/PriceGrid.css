@@ -1,0 +1,152 @@
+.price {
+  margin: 14rem auto;
+}
+
+.priceHeader {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.priceTitle {
+  width: 50%;
+}
+
+.priceButtonGroup {
+  padding: 5px;
+  border-radius: 1rem;
+  background-color: var(--white100);
+}
+
+.btnYearly,
+.btnMonthly {
+  cursor: pointer;
+  font-family: 'DM Sans', sans-serif;
+  font-weight: 700;
+  padding: 2rem 6rem;
+  background-color: transparent;
+}
+
+.btnActive {
+  color: #fff;
+  border-radius: 1rem 0 0 1rem;
+  background-color: var(--purple);
+}
+
+.gridPrice {
+  margin-top: 8rem;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 48rem;
+  column-gap: 2.5rem;
+}
+
+.cardPrice {
+  height: min-content;
+  margin: auto 0;
+  padding: 3.5rem;
+  border-radius: 2rem;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 2.5rem;
+  background-color: var(--white100);
+  transition: all 0.3s;
+}
+
+.cardPlan {
+  font-family: 'DM Sans', sans-serif;
+  font-size: 1.8rem;
+  font-weight: 400;
+  color: var(--gray);
+  transition: all 0.3s;
+}
+
+.cardTitle {
+  font-size: 6rem;
+  color: var(--black);
+  transition: all 0.3s;
+}
+
+.modality {
+  font-size: 1.8rem;
+}
+
+.itemsList {
+  display: flex;
+  flex-direction: column;
+  gap: 2.5rem;
+}
+
+.itemsList {
+  list-style: none;
+  transition: all 0.3s;
+}
+
+.priceItem {
+  font-family: 'Mulish';
+  font-size: 1.8rem;
+  color: var(--gray);
+  transition: all 0.3s;
+}
+
+.btnCard {
+  margin-top: 2rem;
+  padding: 2rem;
+  width: 100%;
+  color: var(--purple);
+  font-weight: 700;
+  font-family: 'DM Sans', sans-serif;
+  border-radius: 1rem;
+  background-color: var(--white);
+  transition: all 0.3s;
+}
+
+.cardPrice:hover {
+  padding: 5rem 3.5rem;
+  background-color: var(--purple);
+}
+
+.cardPrice:hover > .cardPlan {
+  color: var(--white);
+}
+
+.cardPrice:hover > .cardTitle {
+  color: var(--white);
+}
+.cardPrice:hover > .btnCard {
+  color: var(--white);
+  background-color: var(--dark-purple);
+}
+
+.cardPrice:hover > .btnCard:hover {
+  background-color: var(--orange);
+}
+
+.cardPrice:hover > .itemsList li {
+  color: var(--white);
+}
+
+@media (max-width: 1024px) {
+  .gridPrice {
+    grid-template-columns: 34.1rem 34.1rem 34.1rem;
+    overflow: scroll;
+  }
+}
+
+@media (max-width: 670px) {
+  .priceHeader {
+    display: flex;
+    flex-direction: column;
+    gap: 4rem;
+  }
+
+  .priceTitle {
+    width: 100%;
+  }
+
+  .priceButtonGroup {
+    margin: 0 auto 0 0;
+  }
+}

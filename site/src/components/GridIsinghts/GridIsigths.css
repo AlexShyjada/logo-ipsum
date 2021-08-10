@@ -1,0 +1,31 @@
+.gridIsights {
+  margin: 14rem auto;
+  display: flex;
+  gap: 2.5rem;
+}
+
+.insigth {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 1.5rem;
+  text-align: center;
+}
+
+.insigthFigure {
+  height: 10rem;
+}
+
+.insigthFigure img {
+  height: 10rem;
+}
+
+.paragrathInsigth {
+  font-size: 2rem;
+}
+
+@media (max-width: 500px) {
+  .gridIsights {
+    flex-direction: column;
+  }
+}
