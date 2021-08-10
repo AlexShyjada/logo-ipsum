@@ -1,8 +1,6 @@
 ## Logo Ipsum
 
-[Protótipo](https://www.figma.com/file/XHUYZVQjNJHhWfB0gKa17H/Logo-Ipsum)
-
-Objeto de estudos sobre criação de componentes no React. Meu desafio foi usar o conceito de jsx/tsx para criar componetes estáticos para a landing page especificada acima
+Objeto de estudos sobre criação de componentes no React. Meu desafio foi usar o conceito de JavaScript XML para criar componetes estáticos para a landing page especificada no link do [Protótipo](https://www.figma.com/file/XHUYZVQjNJHhWfB0gKa17H/Logo-Ipsum) usando a linguagem Typescript. além disso fiz o responsivo
 
 ---
 
