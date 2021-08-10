@@ -1,4 +1,4 @@
-## Cname
+## Logo Ipsum
 
 [Protótipo](https://www.figma.com/file/XHUYZVQjNJHhWfB0gKa17H/Logo-Ipsum)
 
